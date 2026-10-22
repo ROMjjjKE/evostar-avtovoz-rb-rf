@@ -109,11 +109,6 @@ h2{font-size:clamp(28px,4.2vw,50px);line-height:1.07;text-transform:uppercase;ma
 .faq .pl{flex:none;width:28px;height:28px;border-radius:8px;background:var(--tint);color:var(--red);display:flex;align-items:center;justify-content:center;font-size:19px;font-family:'Jura';font-weight:700;transition:.22s}
 .faq details[open] .pl{transform:rotate(45deg);background:var(--red);color:#fff}
 .faq .fa{padding:0 24px 20px;font-size:15px;color:var(--mut);line-height:1.65}
-/* форма */
-.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
-form{background:var(--pan);border:1px solid var(--line);border-radius:18px;padding:32px;display:grid;gap:13px}
-form label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);display:block;margin-bottom:6px}
-form input,form select{width:100%;background:var(--bg);border:1.5px solid var(--line);color:var(--ink);font-family:'Jura';font-size:15.5px;padding:14px 16px;outline:none;border-radius:10px;transition:border-color .2s;font-weight:600}
 form input:focus,form select:focus{border-color:var(--red)}
 form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23E11D2E' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
 .fok{display:none;border:1.5px solid var(--red);background:var(--tint);color:var(--redH);padding:13px 17px;font-size:14.5px;border-radius:10px;font-weight:600}
@@ -130,8 +125,6 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
 .fab a:hover{background:#1FBF5B}
 .fab a.call{background:var(--red);box-shadow:0 10px 28px rgba(225,29,46,.3)}
 .fab a.call:hover{background:var(--redH)}
-.wm{position:fixed;inset:0;z-index:9390;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='300'%3E%3Ctext x='40' y='150' font-size='26' fill='%2316181A' opacity='.05' font-family='monospace' transform='rotate(-24 40 150)'%3ESiteFast.by%3C/text%3E%3C/svg%3E")}
-.wbadge{position:fixed;left:14px;bottom:14px;z-index:9600;background:var(--pan);color:var(--mut);border:1px solid var(--line);font:600 11px 'Jura',sans-serif;letter-spacing:.06em;padding:7px 10px;border-radius:7px}
 @media(max-width:1020px){nav.main{display:none}.hdr-tel .t{display:none}.burger{display:block}
 .rgrid{grid-template-columns:repeat(2,1fr)}.ugrid{grid-template-columns:repeat(2,1fr)}.prin{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr}}
 @media(max-width:640px){.rgrid{grid-template-columns:1fr}.ugrid{grid-template-columns:1fr}.prin{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
@@ -139,8 +132,6 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
 </style>
 </head>
 <body>
-<div class="wm"></div>
-<div class="wbadge">МАКЕТ: SITEFAST.BY</div>
 <header>
  <div class="wrap hrow">
   <a href="#top" class="logo"><div class="lq">E</div><div><b>EVOSTAR</b><span>автовоз РБ — РФ</span></div></a>
@@ -149,14 +140,14 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
   </nav>
   <div class="hdr-tel">
    <a href="tel:7500"><div class="t">7500<small>МТС · А1</small></div></a>
-   <a class="btn" href="#zayavka" style="padding:12px 20px;font-size:13.5px">Рассчитать</a>
+   <a class="btn" href="tel:7500" style="padding:12px 20px;font-size:13.5px">Позвонить: 7500</a>
   </div>
   <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
  </div>
 </header>
 <div class="mnav" id="mnav">
  <button class="mx" id="mx" aria-label="Закрыть">×</button>
- <a href="#marshruty">Маршруты</a><a href="#gruz">Что перевозим</a><a href="#pochemy">Почему мы</a><a href="#reye">Рейс</a><a href="#voprosy">Вопросы</a><a href="#zayavka">Рассчитать</a>
+ <a href="#marshruty">Маршруты</a><a href="#gruz">Что перевозим</a><a href="#pochemy">Почему мы</a><a href="#reye">Рейс</a><a href="#voprosy">Вопросы</a><a href="tel:7500">7500</a>
 </div>
 
 <main id="top">
@@ -241,7 +232,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
    <div class="li"><span class="ln">5</span><div><b>Выдача с совместным осмотром</b><p>При выгрузке осматриваете машину вместе с водителем и только потом подписываете документы.</p></div></div>
   </div>
   <div class="steps">
-   <div class="stp"><div class="sn">1</div><b>Заявка</b><p>Звонок на 7500 или форма: откуда, куда, марка авто.</p></div>
+   <div class="stp"><div class="sn">1</div><b>Заявка</b><p>Звонок на 7500: скажите, откуда, куда и марку авто.</p></div>
    <div class="stp"><div class="sn">2</div><b>Расчёт и дата</b><p>Называем цену и ближайший рейс под ваш маршрут.</p></div>
    <div class="stp"><div class="sn">3</div><b>Погрузка и крепление</b><p>Осматриваем авто, загружаем, фиксируем, фотографируем.</p></div>
    <div class="stp"><div class="sn">4</div><b>Доставка и выдача</b><p>Водитель на связи, при выдаче — совместный осмотр.</p></div>
@@ -254,7 +245,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
   <div class="kick">05 — Вопросы</div>
   <h2>Что спрашивают перед отправкой</h2>
   <div class="faq" style="margin-top:36px">
-   <details><summary>Сколько стоит перевозка?<span class="pl">+</span></summary><div class="fa">Цена зависит от маршрута, типа авто и загрузки автовоза. Позвоните на 7500 или оставьте заявку — расчёт за несколько минут, без «примерных» доплат потом.</div></details>
+   <details><summary>Сколько стоит перевозка?<span class="pl">+</span></summary><div class="fa">Цена зависит от маршрута, типа авто и загрузки автовоза. Позвоните на короткий номер 7500 — расчёт за несколько минут, без «примерных» доплат потом.</div></details>
    <details><summary>Как быстро доставите?<span class="pl">+</span></summary><div class="fa">По базовым маршрутам — обычно от одного до трёх дней. Под ваш город предложим ближайший рейс и точную дату при заказе.</div></details>
    <details><summary>Какие документы нужны?<span class="pl">+</span></summary><div class="fa">Ваш паспорт и документы на автомобиль. Если машину отправляет не владелец — доверенность. Для юрлиц — стандартный пакет, подскажем при оформлении.</div></details>
    <details><summary>Можно ли оставить вещи в машине?<span class="pl">+</span></summary><div class="fa">Небольшие вещи в салоне обычно можно — по согласованию и без ценностей. Автовоз не отвечает за содержимое салона, поэтому ценности лучше забрать.</div></details>
@@ -264,26 +255,6 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
  </div>
 </section>
 
-<section class="blk soft" id="zayavka">
- <div class="wrap">
-  <div class="fgrid">
-   <div>
-    <div class="kick">06 — Заявка</div>
-    <h2>Рассчитаем перевозку</h2>
-    <p class="lead">Напишите маршрут и авто — перезвоним с ценой и ближайшим рейсом. Или наберите <b>7500</b> (МТС и А1) — диспетчер ответит сразу.</p>
-   </div>
-   <form id="cform" novalidate>
-    <div><label for="f-from">Откуда</label><input id="f-from" name="from" placeholder="Город в РБ или РФ"></div>
-    <div><label for="f-to">Куда</label><input id="f-to" name="to" placeholder="Город доставки"></div>
-    <div><label for="f-car">Автомобиль</label><input id="f-car" name="car" placeholder="Марка и модель"></div>
-    <div><label for="f-name">Ваше имя</label><input id="f-name" name="name" required placeholder="Как к вам обращаться"></div>
-    <div><label for="f-tel">Телефон</label><input id="f-tel" name="tel" required placeholder="+375 __ ___-__-__ или +7 ___ ___-__-__"></div>
-    <button class="btn" type="submit" style="width:100%">Отправить заявку</button>
-    <div class="fok" id="fok">Спасибо! Заявка принята — перезвоним с расчётом.</div>
-   </form>
-  </div>
- </div>
-</section>
 
 <section id="contacts">
  <div class="wrap">
@@ -300,7 +271,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(
 </main>
 
 <footer>
- <div class="wrap ft"><span>© 2026 evostar.by · автовоз РБ — РФ</span><span>Макет: SiteFast.by</span></div>
+ <div class="wrap ft"><span>© 2026 evostar.by · автовоз РБ — РФ</span></div>
 </footer>
 
 <div class="fab">
@@ -315,22 +286,6 @@ document.body.classList.add('js');
  b.addEventListener('click',function(){m.classList.add('on')});
  document.getElementById('mx').addEventListener('click',function(){m.classList.remove('on')});
  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('on')})});
-})();
-/* форма */
-(function(){
- var f=document.getElementById('cform');
- f.addEventListener('submit',function(e){
-  e.preventDefault();
-  var ok=true;
-  ['name','tel'].forEach(function(n){
-   var el=f.querySelector('[name='+n+']');
-   if(!el.value.trim()){ok=false;el.style.borderColor='#E11D2E';}
-   else el.style.borderColor='';
-  });
-  if(!ok)return;
-  document.getElementById('fok').style.display='block';
-  f.reset();
- });
 })();
 </script>
 </body>
