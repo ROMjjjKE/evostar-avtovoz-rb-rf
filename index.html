@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evostar — перевозка автомобилей автовозом РБ — РФ | 7500</title>
+<meta name="description" content="Автовоз РБ — РФ: перевозка легковых автомобилей, кроссоверов и мотоциклов из Беларуси в Россию и обратно. Минск, Витебск, Гомель — Москва, Санкт-Петербург и другие города. Короткий номер 7500 (МТС и А1). Быстрый расчёт по телефону.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F4;--pan:#FFFFFF;--pan2:#EFF1EE;--line:#E1E3DF;--ink:#16181A;--mut:#666B6E;--red:#E11D2E;--redH:#B8151F;--tint:rgba(225,29,46,.07)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jura',Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:16.5px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--red);color:#fff}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+h1,h2,h3,.dsp{font-family:'Play',sans-serif;font-weight:700}
+.kick{font-size:12.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:#fff;font-family:'Jura';font-weight:700;font-size:15px;padding:16px 30px;border-radius:10px;border:none;cursor:pointer;transition:.18s;box-shadow:0 10px 28px rgba(225,29,46,.25)}
+.btn:hover{background:var(--redH);transform:translateY(-2px)}
+.btn-o{background:transparent;border:1.5px solid var(--line);color:var(--ink);box-shadow:none}
+.btn-o:hover{border-color:var(--red);color:var(--red)}
+/* шапка */
+header{position:sticky;top:0;z-index:300;background:rgba(245,246,244,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.lq{width:46px;height:46px;border-radius:11px;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:'Play';font-weight:700;font-size:23px;color:#fff}
+.logo b{display:block;font-family:'Play';font-size:20px;letter-spacing:.06em;line-height:1.1}
+.logo span{font-size:11px;color:var(--mut);letter-spacing:.14em;text-transform:uppercase}
+nav.main{display:flex;gap:2px}
+nav.main a{font-size:14px;font-weight:600;color:var(--mut);padding:10px 13px;border-radius:8px;transition:.15s}
+nav.main a:hover{color:var(--ink);background:var(--pan2)}
+.hdr-tel{display:flex;align-items:center;gap:12px}
+.hdr-tel .t{font-family:'Play';font-weight:700;font-size:17px;white-space:nowrap}
+.hdr-tel .t small{display:block;font-size:10.5px;font-family:'Jura';font-weight:600;color:var(--mut);letter-spacing:.08em}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:9px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0}
+.mnav{position:fixed;inset:0;z-index:950;background:var(--bg);display:none;flex-direction:column;padding:30px;gap:2px}
+.mnav.on{display:flex}
+.mnav .mx{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--ink);font-size:34px;cursor:pointer}
+.mnav a{font-family:'Play';font-size:28px;padding:12px 0;border-bottom:1px solid var(--line)}
+/* hero */
+.hero{padding:96px 0 70px;border-bottom:1px solid var(--line);position:relative;overflow:clip}
+.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:900px;height:900px;background:radial-gradient(circle,rgba(225,29,46,.08),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative}
+h1{font-size:clamp(34px,5.6vw,70px);line-height:1.05;text-transform:uppercase;max-width:940px}
+h1 em{font-style:normal;color:var(--red)}
+.hsub{font-size:18px;color:var(--mut);max-width:620px;margin-top:20px}
+.hsub b{color:var(--ink)}
+.hcta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+/* короткий номер — фишка */
+.short{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;margin-top:44px;background:var(--pan);border:1px solid var(--line);border-radius:18px;padding:26px 32px;flex-wrap:wrap}
+.short .num{font-family:'Play';font-weight:700;font-size:clamp(52px,7vw,86px);line-height:.95;color:var(--red);letter-spacing:.02em}
+.short .num small{display:block;font-family:'Jura';font-weight:700;font-size:13px;color:var(--ink);letter-spacing:.2em;margin-top:8px}
+.short p{font-size:15px;color:var(--mut);max-width:380px}
+.short p b{color:var(--ink)}
+.tels{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+.telc{background:var(--pan);border:1px solid var(--line);border-radius:14px;padding:18px 22px;display:flex;align-items:center;gap:14px}
+.telc .fl{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:var(--tint);color:var(--red);border-radius:6px;padding:5px 9px}
+.telc .t{font-family:'Play';font-weight:700;font-size:20px}
+.telc .t small{display:block;font-family:'Jura';font-weight:600;font-size:11.5px;color:var(--mut)}
+/* секции */
+section.blk{padding:92px 0;border-bottom:1px solid var(--line)}
+section.soft{background:var(--pan)}
+h2{font-size:clamp(28px,4.2vw,50px);line-height:1.07;text-transform:uppercase;max-width:860px}
+.lead{font-size:17px;color:var(--mut);margin-top:14px;max-width:680px}
+/* маршруты */
+.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:44px}
+.rt{background:var(--pan);border:1px solid var(--line);border-radius:13px;padding:20px 20px 18px;transition:.18s}
+.rt:hover{border-color:var(--red);transform:translateY(-3px)}
+.rt .ar{font-family:'Play';font-weight:700;font-size:16.5px;display:flex;align-items:center;gap:8px}
+.rt .ar i{font-style:normal;color:var(--red)}
+.rt span{font-size:12.5px;color:var(--mut)}
+.rt.all{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rt.all:hover{border-color:var(--red)}
+.rt.all span{color:#B9BDBF}
+/* что перевозим */
+.ugrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.ucard{background:var(--pan2);border:1px solid var(--line);border-radius:16px;padding:26px}
+.ucard b{display:block;font-family:'Play';font-size:20px;margin-bottom:8px}
+.ucard p{font-size:14.5px;color:var(--mut)}
+.ucard .ic{width:50px;height:50px;border-radius:12px;background:var(--tint);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.ucard .ic svg{width:25px;height:25px;stroke:var(--red);fill:none;stroke-width:2}
+/* причины */
+.prin{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.pbox{background:var(--pan);border:1px solid var(--line);border-radius:16px;padding:28px}
+.pbox .n{font-family:'Play';font-weight:700;font-size:15px;color:#fff;background:var(--red);width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.pbox b{display:block;font-family:'Play';font-size:19px;margin-bottom:8px}
+.pbox p{font-size:14.5px;color:var(--mut)}
+/* шаги */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.stp{border-top:3px solid var(--red);padding:20px 4px 0}
+.stp .sn{font-family:'Play';font-weight:700;font-size:42px;color:var(--red);line-height:1}
+.stp b{display:block;font-family:'Play';font-size:18px;margin:12px 0 7px}
+.stp p{font-size:14.5px;color:var(--mut)}
+/* рейс: вау-механика загрузки */
+.trip{margin-top:44px;background:var(--pan);border:1px solid var(--line);border-radius:22px;padding:34px;overflow:hidden}
+.trip-scene{position:relative;height:260px;margin-top:10px}
+.truck{position:absolute;left:0;bottom:24px;transition:transform 1.1s cubic-bezier(.4,0,.2,1)}
+.truck.drive{transform:translateX(115%)}
+.deck{position:absolute;left:26px;bottom:96px;width:560px;height:64px;border:2.5px solid var(--ink);border-radius:8px;background:var(--pan2)}
+.deck2{position:absolute;left:56px;bottom:170px;width:500px;height:64px;border:2.5px solid var(--ink);border-radius:8px;background:var(--pan2)}
+.cab{position:absolute;left:0;bottom:24px;width:96px;height:118px;background:var(--red);border-radius:12px 26px 6px 6px}
+.cab::before{content:'';position:absolute;left:12px;top:14px;width:52px;height:30px;background:#fff;border-radius:6px;opacity:.9}
+.cab::after{content:'';position:absolute;right:10px;bottom:0;width:16px;height:16px;background:var(--ink);border-radius:3px}
+.wh{position:absolute;bottom:12px;width:44px;height:44px;background:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.wh::after{content:'';width:16px;height:16px;background:var(--pan);border-radius:50%}
+.car{position:absolute;width:86px;height:40px;background:var(--ink);border-radius:9px 14px 5px 5px;opacity:0;transition:opacity .4s,transform .5s cubic-bezier(.34,1.3,.5,1)}
+.car::before{content:'';position:absolute;left:14px;top:-14px;width:54px;height:14px;background:inherit;border-radius:7px 9px 0 0;opacity:.92}
+.car.on{opacity:1}
+.car.on.up{transform:translateY(-52px)}
+.truck .cap{position:absolute;left:26px;top:-34px;font-size:12px;font-weight:700;color:var(--mut);letter-spacing:.1em;text-transform:uppercase}
+.trip-ctl{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}
+.tcount{font-family:'Play';font-weight:700;font-size:30px}
+.tcount small{font-family:'Jura';font-size:13px;font-weight:700;color:var(--mut);margin-left:8px;letter-spacing:.08em}
+.tmsg{font-size:14px;color:var(--mut);margin-left:auto}
+/* faq */
+.faq details{background:var(--pan);border:1px solid var(--line);border-radius:13px;margin-bottom:10px}
+.faq summary{list-style:none;cursor:pointer;padding:19px 24px;font-family:'Play';font-size:17.5px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq .pl{flex:none;width:28px;height:28px;border-radius:8px;background:var(--tint);color:var(--red);display:flex;align-items:center;justify-content:center;font-size:19px;font-family:'Jura';font-weight:700;transition:.22s}
+.faq details[open] .pl{transform:rotate(45deg);background:var(--red);color:#fff}
+.faq .fa{padding:0 24px 20px;font-size:15px;color:var(--mut);line-height:1.65}
+/* форма */
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+form{background:var(--pan);border:1px solid var(--line);border-radius:18px;padding:32px;display:grid;gap:13px}
+form label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);display:block;margin-bottom:6px}
+form input,form select{width:100%;background:var(--bg);border:1.5px solid var(--line);color:var(--ink);font-family:'Jura';font-size:15.5px;padding:14px 16px;outline:none;border-radius:10px;transition:border-color .2s;font-weight:600}
+form input:focus,form select:focus{border-color:var(--red)}
+form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23E11D2E' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.fok{display:none;border:1.5px solid var(--red);background:var(--tint);color:var(--redH);padding:13px 17px;font-size:14.5px;border-radius:10px;font-weight:600}
+/* контакты */
+#contacts{padding:100px 0 60px;text-align:center}
+.cbig{font-family:'Play';font-weight:700;font-size:clamp(30px,5.4vw,64px);color:var(--ink);display:block;margin-top:22px}
+.cbig small{display:block;font-family:'Jura';font-weight:700;font-size:13px;color:var(--mut);letter-spacing:.14em;text-transform:uppercase}
+.cty{color:var(--mut);font-size:14px;letter-spacing:.16em;text-transform:uppercase;margin-top:22px}
+footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(--mut)}
+.ft{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+/* fab + watermark */
+.fab{position:fixed;right:18px;bottom:18px;z-index:9400;display:flex;gap:10px}
+.fab a{display:flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:'Jura';font-weight:700;font-size:14px;padding:14px 20px;border-radius:999px;box-shadow:0 10px 28px rgba(37,211,102,.35)}
+.fab a:hover{background:#1FBF5B}
+.fab a.call{background:var(--red);box-shadow:0 10px 28px rgba(225,29,46,.3)}
+.fab a.call:hover{background:var(--redH)}
+.wm{position:fixed;inset:0;z-index:9390;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='300'%3E%3Ctext x='40' y='150' font-size='26' fill='%2316181A' opacity='.05' font-family='monospace' transform='rotate(-24 40 150)'%3ESiteFast.by%3C/text%3E%3C/svg%3E")}
+.wbadge{position:fixed;left:14px;bottom:14px;z-index:9600;background:var(--pan);color:var(--mut);border:1px solid var(--line);font:600 11px 'Jura',sans-serif;letter-spacing:.06em;padding:7px 10px;border-radius:7px}
+@media(max-width:1020px){nav.main{display:none}.hdr-tel .t{display:none}.burger{display:block}
+.rgrid{grid-template-columns:repeat(2,1fr)}.ugrid{grid-template-columns:repeat(2,1fr)}.prin{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr}}
+@media(max-width:640px){.rgrid{grid-template-columns:1fr}.ugrid{grid-template-columns:1fr}.prin{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
+.short{grid-template-columns:1fr}.tels{grid-template-columns:1fr}.trip{padding:20px}.trip-scene{transform:scale(.62);transform-origin:left bottom;width:640px}
+.fab{bottom:12px;right:12px;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wm"></div>
+<div class="wbadge">МАКЕТ: SITEFAST.BY</div>
+<header>
+ <div class="wrap hrow">
+  <a href="#top" class="logo"><div class="lq">E</div><div><b>EVOSTAR</b><span>автовоз РБ — РФ</span></div></a>
+  <nav class="main">
+   <a href="#marshruty">Маршруты</a><a href="#gruz">Что перевозим</a><a href="#pochemy">Почему мы</a><a href="#reye">Рейс</a><a href="#voprosy">Вопросы</a>
+  </nav>
+  <div class="hdr-tel">
+   <a href="tel:7500"><div class="t">7500<small>МТС · А1</small></div></a>
+   <a class="btn" href="#zayavka" style="padding:12px 20px;font-size:13.5px">Рассчитать</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+ </div>
+</header>
+<div class="mnav" id="mnav">
+ <button class="mx" id="mx" aria-label="Закрыть">×</button>
+ <a href="#marshruty">Маршруты</a><a href="#gruz">Что перевозим</a><a href="#pochemy">Почему мы</a><a href="#reye">Рейс</a><a href="#voprosy">Вопросы</a><a href="#zayavka">Рассчитать</a>
+</div>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div class="kick">evostar.by — перевозка автомобилей</div>
+  <h1>Автовоз <em>РБ — РФ</em>: доставим машину без пробега</h1>
+  <p class="hsub">Перевозим легковые автомобили, кроссоверы и мотоциклы из Беларуси в Россию и обратно — без перегонов и пробега. <b>Своя погрузка, крепление, контроль на всём маршруте.</b></p>
+  <div class="hcta">
+   <a class="btn" href="tel:7500">Позвонить: 7500</a>
+   <a class="btn btn-o" href="https://wa.me/375297477500" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <div class="short">
+   <div class="num">7500<small>МТС и А1</small></div>
+   <p><b>Короткий номер для абонентов МТС и А1.</b> Наберите 7500 с любого белорусского номера — сразу попадёте на диспетчера. Для звонков из России и мессенджеров — номера ниже.</p>
+  </div>
+  <div class="tels">
+   <a class="telc" href="tel:+375297477500"><span class="fl">РБ</span><div class="t">+375 29 747-75-00<small>звонки и WhatsApp</small></div></a>
+   <a class="telc" href="tel:+79688887500"><span class="fl">РФ</span><div class="t">+7 968 888-75-00<small>для звонков из России</small></div></a>
+  </div>
+ </div>
+</section>
+
+<section class="blk" id="marshruty">
+ <div class="wrap">
+  <div class="kick">01 — Маршруты</div>
+  <h2>Направления перевозок</h2>
+  <p class="lead">Базовые коридоры — с ответными рейсами, поэтому место есть почти всегда. Срок доставки — обычно от одного до трёх дней.</p>
+  <div class="rgrid">
+   <div class="rt"><div class="ar">Минск <i>→</i> Москва</div><span>и обратно, рейсы каждую неделю</span></div>
+   <div class="rt"><div class="ar">Витебск <i>→</i> Москва</div><span>и обратно, регулярный маршрут</span></div>
+   <div class="rt"><div class="ar">Минск <i>→</i> Санкт-Петербург</div><span>и обратно</span></div>
+   <div class="rt"><div class="ar">Витебск <i>→</i> Санкт-Петербург</div><span>и обратно</span></div>
+   <div class="rt"><div class="ar">Гомель <i>→</i> Москва</div><span>и обратно</span></div>
+   <div class="rt"><div class="ar">Минск <i>→</i> Казань</div><span>и другие города РФ</span></div>
+   <div class="rt"><div class="ar">Брест <i>→</i> Москва</div><span>и обратно</span></div>
+   <div class="rt all"><div class="ar">Любой город <i>→</i> любой</div><span>попросите — предложим ближайший рейс под ваш маршрут</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="blk soft" id="gruz">
+ <div class="wrap">
+  <div class="kick">02 — Что перевозим</div>
+  <h2>Грузим и везём</h2>
+  <div class="ugrid">
+   <div class="ucard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 14 l2-6 h14 l2 6 v4 h-2 v-2 H5 v2 H3 z" stroke-linejoin="round"/><circle cx="7.5" cy="16.5" r="1.6"/><circle cx="16.5" cy="16.5" r="1.6"/></svg></div><b>Легковые автомобили</b><p>Новые из салона и с пробегом, купленные в РБ или РФ. Без километров на одометре.</p></div>
+   <div class="ucard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 13 l2-7 h13 l3 7 v6 h-2 v-2 H5 v2 H3 z" stroke-linejoin="round"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg></div><b>Кроссоверы и внедорожники</b><p>Высокие и тяжёлые машины — погрузка своим ходом или лебёдкой при необходимости.</p></div>
+   <div class="ucard"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M9 17 l3-9 h4 l2 9 M12 8 h5" stroke-linejoin="round"/></svg></div><b>Мотоциклы и квадроциклы</b><p>Крепим отдельно, укрываем от дороги. Берём даже по одному — мест много.</p></div>
+   <div class="ucard"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="10" width="14" height="7" rx="1"/><path d="M17 13 h4 v4 h-4"/><circle cx="7" cy="19" r="1.8"/><circle cx="14" cy="19" r="1.8"/></svg></div><b>Микроавтобусы</b><p>Коммерческий транспорт — при посадке в габариты автовоза, уточним по телефону.</p></div>
+   <div class="ucard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3 l7 4 v6 c0 4-3 6.5-7 8 c-4-1.5-7-4-7-8 V7 z" stroke-linejoin="round"/><path d="M9.5 12 l1.8 1.8 3.4-4"/></svg></div><b>Авто после ДТП</b><p>Машина не на ходу? Погрузим лебёдкой и закрепим так, чтобы доехала без новых повреждений.</p></div>
+   <div class="ucard"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M8 21 h8 M12 16 v5"/><path d="M8 7 h8"/></svg></div><b>Спецтехника — по согласованию</b><p>Мотоблоки, мини-техника и небольшие тракторы. Габариты и вес — скажем сразу, влезет ли.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="blk" id="pochemy">
+ <div class="wrap">
+  <div class="kick">03 — Почему мы</div>
+  <h2>Шесть причин доверить машину нам</h2>
+  <div class="prin">
+   <div class="pbox"><div class="n">1</div><b>Без пробега и перегонов</b><p>Машина едет на автовозе — одометр остаётся прежним, ресурс и история не страдают.</p></div>
+   <div class="pbox"><div class="n">2</div><b>Крепление по нормам</b><p>Фиксируем колёса и кузов, проверяем крепления перед выездом и на стоянках в пути.</p></div>
+   <div class="pbox"><div class="n">3</div><b>Свои автовозы</b><p>Не перекупаем заказы: машина загружается тем же перевозчиком, с которым вы говорили.</p></div>
+   <div class="pbox"><div class="n">4</div><b>Связь с водителем</b><p>Диспетчер на связи весь рейс: скажем, где машина, и предупредим о подаче заранее.</p></div>
+   <div class="pbox"><div class="n">5</div><b>Осмотр при выдаче</b><p>Принимаете автомобиль лично: осматриваете вместе с водителем до подписания документов.</p></div>
+   <div class="pbox"><div class="n">6</div><b>Наличный и безналичный</b><p>Физлицам и юрлицам. Полный пакет документов для отчётности — по запросу.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="blk soft" id="reye">
+ <div class="wrap">
+  <div class="kick">04 — Рейс</div>
+  <h2>Как загружается автовоз</h2>
+  <p class="lead">Нажимайте «Загрузить» — увидите, как машина занимает место на нижнем ярусе, следующий поднимается наверх. Когда все места заняты, рейс отправляется.</p>
+  <div class="trip">
+   <div class="trip-scene" id="scene">
+    <div class="truck" id="truck">
+     <div class="cab"></div>
+     <div class="deck"></div>
+     <div class="deck2"></div>
+     <span class="cap" id="cap">мест свободно: 4</span>
+     <div class="wh" style="left:56px"></div>
+     <div class="wh" style="left:520px"></div>
+     <div class="wh" style="left:560px"></div>
+     <div class="car" id="car1" style="left:150px;bottom:96px"></div>
+     <div class="car" id="car2" style="left:300px;bottom:96px"></div>
+     <div class="car" id="car3" style="left:150px;bottom:170px"></div>
+     <div class="car" id="car4" style="left:300px;bottom:170px"></div>
+    </div>
+   </div>
+   <div class="trip-ctl">
+    <div class="tcount"><span id="tcount">0</span><small>из 4 машин загружено</small></div>
+    <button class="btn" id="loadBtn">Загрузить авто</button>
+    <span class="tmsg" id="tmsg">нажмите кнопку — увидите погрузку</span>
+   </div>
+  </div>
+  <div class="steps">
+   <div class="stp"><div class="sn">1</div><b>Заявка</b><p>Звонок на 7500 или форма: откуда, куда, марка авто.</p></div>
+   <div class="stp"><div class="sn">2</div><b>Расчёт и дата</b><p>Называем цену и ближайший рейс под ваш маршрут.</p></div>
+   <div class="stp"><div class="sn">3</div><b>Погрузка и крепление</b><p>Осматриваем авто, загружаем, фиксируем, фотографируем.</p></div>
+   <div class="stp"><div class="sn">4</div><b>Доставка и выдача</b><p>Водитель на связи, при выдаче — совместный осмотр.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="blk" id="voprosy">
+ <div class="wrap">
+  <div class="kick">05 — Вопросы</div>
+  <h2>Что спрашивают перед отправкой</h2>
+  <div class="faq" style="margin-top:36px">
+   <details><summary>Сколько стоит перевозка?<span class="pl">+</span></summary><div class="fa">Цена зависит от маршрута, типа авто и загрузки автовоза. Позвоните на 7500 или оставьте заявку — расчёт за несколько минут, без «примерных» доплат потом.</div></details>
+   <details><summary>Как быстро доставите?<span class="pl">+</span></summary><div class="fa">По базовым маршрутам — обычно от одного до трёх дней. Под ваш город предложим ближайший рейс и точную дату при заказе.</div></details>
+   <details><summary>Какие документы нужны?<span class="pl">+</span></summary><div class="fa">Ваш паспорт и документы на автомобиль. Если машину отправляет не владелец — доверенность. Для юрлиц — стандартный пакет, подскажем при оформлении.</div></details>
+   <details><summary>Можно ли оставить вещи в машине?<span class="pl">+</span></summary><div class="fa">Небольшие вещи в салоне обычно можно — по согласованию и без ценностей. Автовоз не отвечает за содержимое салона, поэтому ценности лучше забрать.</div></details>
+   <details><summary>Машина не на ходу — примете?<span class="pl">+</span></summary><div class="fa">Да, после ДТП или без хода: погрузим лебёдкой и закрепим дополнительно. Скажите об этом при заказе, чтобы водитель приехал с лебёдкой.</div></details>
+   <details><summary>Как оплатить?<span class="pl">+</span></summary><div class="fa">Наличными при выдаче или по согласованной предоплате, юрлицам — безналичный расчёт с документами.</div></details>
+  </div>
+ </div>
+</section>
+
+<section class="blk soft" id="zayavka">
+ <div class="wrap">
+  <div class="fgrid">
+   <div>
+    <div class="kick">06 — Заявка</div>
+    <h2>Рассчитаем перевозку</h2>
+    <p class="lead">Напишите маршрут и авто — перезвоним с ценой и ближайшим рейсом. Или наберите <b>7500</b> (МТС и А1) — диспетчер ответит сразу.</p>
+   </div>
+   <form id="cform" novalidate>
+    <div><label for="f-from">Откуда</label><input id="f-from" name="from" placeholder="Город в РБ или РФ"></div>
+    <div><label for="f-to">Куда</label><input id="f-to" name="to" placeholder="Город доставки"></div>
+    <div><label for="f-car">Автомобиль</label><input id="f-car" name="car" placeholder="Марка и модель"></div>
+    <div><label for="f-name">Ваше имя</label><input id="f-name" name="name" required placeholder="Как к вам обращаться"></div>
+    <div><label for="f-tel">Телефон</label><input id="f-tel" name="tel" required placeholder="+375 __ ___-__-__ или +7 ___ ___-__-__"></div>
+    <button class="btn" type="submit" style="width:100%">Отправить заявку</button>
+    <div class="fok" id="fok">Спасибо! Заявка принята — перезвоним с расчётом.</div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section id="contacts">
+ <div class="wrap">
+  <div class="kick">Контакты</div>
+  <h2 style="margin:0 auto">evostar.by — автовоз РБ и РФ</h2>
+  <div style="display:grid;gap:26px;margin-top:22px;justify-content:center">
+   <span class="cbig">7500<small>короткий номер · МТС и А1</small></span>
+   <span class="cbig" style="font-size:clamp(22px,3.6vw,40px)">+375 29 747-75-00 <small>РБ · звонки и WhatsApp</small></span>
+   <span class="cbig" style="font-size:clamp(22px,3.6vw,40px)">+7 968 888-75-00 <small>для звонков из России</small></span>
+  </div>
+  <div class="cty">перевозка автомобилей РБ — РФ · evostar.by</div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap ft"><span>© 2026 evostar.by · автовоз РБ — РФ</span><span>Макет: SiteFast.by</span></div>
+</footer>
+
+<div class="fab">
+ <a href="tel:7500" class="call">7500</a>
+ <a href="https://wa.me/375297477500" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+document.body.classList.add('js');
+(function(){
+ var b=document.getElementById('burger'),m=document.getElementById('mnav');
+ b.addEventListener('click',function(){m.classList.add('on')});
+ document.getElementById('mx').addEventListener('click',function(){m.classList.remove('on')});
+ m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('on')})});
+})();
+/* рейс: загрузка автовоза */
+(function(){
+ var cars=[].slice.call(document.querySelectorAll('.car'));
+ var cnt=document.getElementById('tcount'),msg=document.getElementById('tmsg'),cap=document.getElementById('cap');
+ var truck=document.getElementById('truck'),btn=document.getElementById('loadBtn');
+ var i=0,N=cars.length,driving=false;
+ function upd(){
+  cnt.textContent=i;
+  cap.textContent='мест свободно: '+(N-i);
+  if(i<N){ msg.textContent='нажмите кнопку — увидите погрузку'; btn.textContent='Загрузить авто'; }
+  else { msg.textContent='рейс готов — отправляем!'; btn.textContent='Отправить рейс'; }
+ }
+ btn.addEventListener('click',function(){
+  if(driving) return;
+  if(i<N){
+   cars[i].classList.add('on'); i++;
+   if(i===3) cars[2].classList.add('up');
+   upd();
+  } else {
+   driving=true; truck.classList.add('drive');
+   msg.textContent='автовоз в пути — место освободится на следующем рейсе';
+   setTimeout(function(){
+    i=0; cars.forEach(function(c){c.classList.remove('on','up')});
+    truck.classList.remove('drive'); driving=false;
+    btn.textContent='Загрузить авто'; upd();
+   },2600);
+  }
+ });
+ upd();
+ window.__tripLoad=function(n){for(var k=0;k<n&&i<N;k++){cars[i].classList.add('on');i++;if(i===3)cars[2].classList.add('up');}upd();return i;};
+ window.__tripState=function(){return {i:i,cap:cap.textContent,msg:msg.textContent};};
+})();
+/* форма */
+(function(){
+ var f=document.getElementById('cform');
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=true;
+  ['name','tel'].forEach(function(n){
+   var el=f.querySelector('[name='+n+']');
+   if(!el.value.trim()){ok=false;el.style.borderColor='#E11D2E';}
+   else el.style.borderColor='';
+  });
+  if(!ok)return;
+  document.getElementById('fok').style.display='block';
+  f.reset();
+ });
+})();
+</script>
+</body>
+</html>
